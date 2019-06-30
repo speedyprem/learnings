@@ -1,0 +1,4 @@
+sudo usermod -aG www-data username
+
+sudo chown -R www-data:www-data /var/www/example.com/html
+sudo chmod -R 770 /var/www/example.com/html
