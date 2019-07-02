@@ -1,0 +1,1 @@
+# How to install phpmyadmin in nginx server
