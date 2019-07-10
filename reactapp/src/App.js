@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -42,46 +42,69 @@ function App() {
 
 <div className="container">
     <div className="row">
-        <div className="col">
-            <nav aria-label="breadcrumb">
-                <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li className="breadcrumb-item active" aria-current="page">Contact</li>
-                </ol>
-            </nav>
+        <div className="col-sm-12">
+          	<div className="row">
+		<div className="col-sm-3">
+    	    <div className="hero-widget card-header">
+                <div className="icon">
+                     <i className="glyphicon glyphicon-user"></i>
+                </div>
+                <div className="text">
+                    <var>3</var>
+                    <label className="text-muted">invited guests</label>
+                </div>
+                <div className="options">
+                    <a href="#" className="btn btn-primary btn-lg"><i className="glyphicon glyphicon-plus"></i> Add a guest</a>
+                </div>
+            </div>
+		</div>
+        <div className="col-sm-3">
+            <div className="hero-widget card-header">
+                <div className="icon">
+                     <i className="glyphicon glyphicon-star"></i>
+                </div>
+                <div className="text">
+                    <var>614</var>
+                    <label className="text-muted">page likes</label>
+                </div>
+                <div className="options">
+                    <a href="#" className="btn btn-default btn-lg"><i className="glyphicon glyphicon-search"></i> View traffic</a>
+                </div>
+            </div>
+		</div>
+        <div className="col-sm-3">
+            <div className="hero-widget card-header">
+                <div className="icon">
+                     <i className="glyphicon glyphicon-tags"></i>
+                </div>
+                <div className="text">
+                    <var>73</var>
+                    <label className="text-muted">total orders</label>
+                </div>
+                <div className="options">
+                    <a href="#" className="btn btn-default btn-lg"><i className="glyphicon glyphicon-search"></i> View orders</a>
+                </div>
+            </div>
+    	</div>
+        <div className="col-sm-3">
+            <div className="hero-widget card-header">
+                <div className="icon">
+                     <i className="glyphicon glyphicon-cog"></i>
+                </div>
+                <div className="text">
+                    <var>75%</var>
+                    <label className="text-muted">profile complete</label>
+                </div>
+                <div className="options">
+                    <a href="#" className="btn btn-default btn-lg"><i className="glyphicon glyphicon-wrench"></i> Edit profile</a>
+                </div>
+            </div>
+		</div>
+	</div>
         </div>
     </div>
 </div>
-<div className="container">
-    <div className="row">
-        <div className="col">
-            <div className="card">
-                <div className="card-header bg-primary text-white"><i className="fa fa-envelope"></i> Contact us.
-                </div>
-                <div className="card-body">
-
-                </div>
-            </div>
-        </div>
-        <div className="col-12 col-sm-4">
-            <div className="card bg-light mb-3">
-                <div className="card-header bg-success text-white text-uppercase"><i className="fa fa-home"></i> Address</div>
-                <div className="card-body">
-                    <p>3 rue des Champs Elysées</p>
-                    <p>75008 PARIS</p>
-                    <p>France</p>
-                    <p>Email : email@example.com</p>
-                    <p>Tel. +33 12 56 11 51 84</p>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-    </div>
+  </div>
   );
 }
 
