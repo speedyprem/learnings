@@ -28,3 +28,43 @@ Use below commands to delete the docker container by container ids
 ```dockerfile
 docker container rm cc3f2ff51cab cd20b396a061
 ```
+
+### Remove one or more images
+
+To remove one or more Docker images use the `docker images ls` command to find the ID of the images you want to remove.
+
+```dockerfile
+docker image ls
+```
+
+Once you’ve located the images you want to remove, pass their `IMAGE ID` to the `docker image rm` command. For example to remove the first two images listed in the output above run
+
+```dockerfile
+docker image rm 75835a67d134 2a4cca5ac898
+```
+
+### Remove dangling images
+
+Docker provides a `docker image prune` command that can be used to remove dangled and unused images.
+
+### Remove all unused images
+
+```dockerfile
+docker image prune -a
+```
+
+### Remove images using filters
+
+```dockerfile
+docker image prune -a --filter "until=12h"
+```
+
+### Remove one or more volumes
+
+To remove one or more Docker volumes use the `docker volume ls` command to find the ID of the volumes you want to remove.
+
+Once you’ve found the `VOLUME NAME` of the volumes you want to remove, pass them to the `docker volume rm` command. For example to remove the first volume listed in the output above run:
+
+```dockerfile
+docker volume rm 4e12af8913af888ba67243dec78419bf18adddc3c7a4b2345754b6db64293163
+```
