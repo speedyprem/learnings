@@ -68,3 +68,31 @@ Once you’ve found the `VOLUME NAME` of the volumes you want to remove, pass th
 ```dockerfile
 docker volume rm 4e12af8913af888ba67243dec78419bf18adddc3c7a4b2345754b6db64293163
 ```
+
+### Remove all unused volumes
+
+To remove all unused volumes use the `docker image prune` command:
+
+```dockerfile
+docker volume prune
+```
+
+### Remove one or more networks
+
+To remove one or more Docker networks use the `docker network ls` command to find the ID of the networks you want to remove.
+
+```dockerfile
+docker network ls
+```
+Once you’ve located the networks you want to remove, pass their NETWORK ID to the docker network rm command. For example to remove the network with the name my-bridge-network run
+
+```dockerfile
+docker network rm c520032c3d31
+```
+### Remove all unused network
+
+Use the `docker network prune` command to remove all unused networks.
+
+```dockerfile
+docker network prune
+```
