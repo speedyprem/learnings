@@ -9,12 +9,6 @@ This command will remove all stopped containers, all dangling images, and all un
 docker system prune
 ```
 
-If you also want to remove all unused volumes, pass the `--volumes` flag:
-
-```dockerfile
-docker system prune --volumes
-```
-
 ### Removing Docker Containers
 
 You can get a list of all active and inactive containers by passing the -a flag to the docker container ls command:
