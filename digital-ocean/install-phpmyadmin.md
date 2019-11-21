@@ -2,7 +2,10 @@
 
 ## Step 1 — Install PHPMyAdmin
 
-```sudo apt-get install phpmyadmin```
+```
+sudo apt-get update
+sudo apt-get install phpmyadmin
+```
 
 ## Step 2 — Setup PHPMyAdmin for NGINX
 
